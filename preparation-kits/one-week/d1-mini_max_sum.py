@@ -9,7 +9,7 @@ def mini_max_sum(numbers, length):
             
     def max_sum():
         max_sum = 0
-        for i in range(n, len(numbers)):
+        for i in range(length, len(numbers)):
             max_sum += numbers[i]
         return max_sum
     
