@@ -17,8 +17,7 @@ def validate_set(strings):
             if substring in accepted_strings:
                 print_bad_set(string)
                 return
-            else:
-                invalid_strings.add(substring)
+            invalid_strings.add(substring)
         
         accepted_strings.add(string)
                 
