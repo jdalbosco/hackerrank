@@ -4,9 +4,7 @@ IS_NOT_BALANCED = 'NO'
 OPENING_BRACKETS = '({['
 
 def is_matching(opening, closing):
-    if opening == '(': return True if closing == ')' else False
-    if opening == '{': return True if closing == '}' else False
-    if opening == '[': return True if closing == ']' else False
+    return opening+closing in ['()', '[]', '{}']
 
 def is_balanced(string):
     brackets = []
