@@ -8,9 +8,9 @@ def time_conversion(ampm_time):
     hours, minutes, seconds = military_time.split(":")
     
     if indicator == BEFORE_NOON and hours == TWELVE:
-            return f"{MIDNIGHT}:{minutes}:{seconds}"
+        return f"{MIDNIGHT}:{minutes}:{seconds}"
     elif indicator == AFTER_NOON and hours != TWELVE:
-            hours = int(hours) + 12
-            return f"{hours}:{minutes}:{seconds}"
+        hours = int(hours) + 12
+        return f"{hours}:{minutes}:{seconds}"
 
     return military_time
