@@ -1,6 +1,6 @@
 # SinglyLinkedList() is given in the challenge.
 
-def mergeLists(head_A, head_B):
+def merge_lists(head_A, head_B):
     merged_list = SinglyLinkedList()
     head = merged_list
     
